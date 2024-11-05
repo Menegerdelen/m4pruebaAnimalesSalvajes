@@ -2,11 +2,12 @@ import Animal from "./animal.js";
 
 
 export class Lobo extends Animal{
-    constructor(nombre, edad, comentarios){
-        super(nombre, edad, '../../imgs/Lobo.png', comentarios, 'Aullido.mp3')
+    constructor(nombre, edad, img, comentarios, sonido){
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     aullido(){
-        this.reproducirSonido();
+        console.log('Aullido');
+        
     }
 }

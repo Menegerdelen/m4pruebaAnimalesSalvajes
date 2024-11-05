@@ -2,11 +2,12 @@ import Animal from "./animal.js";
 
 
 export class Serpiente extends Animal{
-    constructor(nombre, edad, comentarios){
-        super(nombre, edad, '../../imgs/Serpiente.png', comentarios, 'Siseo.mp3')
+    constructor(nombre, edad, img, comentarios, sonido){
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     sisear(){
-        this.reproducirSonido();
+        console.log('Sisear');
+        
     }
 }
