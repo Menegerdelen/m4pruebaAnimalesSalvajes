@@ -1,13 +1,12 @@
-import Animal from "./animal";
+import Animal from "./animal.js";
 
 
-export default class Aguila extends Animal{
+export  class Aguila extends Animal{
     constructor(nombre, edad, img, comentarios, sonido){
-    super(nombre, edad, img, comentarios, sonido)
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     chillar(){
-        console.log('Sonido de Aquila');
-        
+        console.log('Chillar');
     }
 }

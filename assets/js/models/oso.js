@@ -1,13 +1,12 @@
-import Animal from "./animal";
+import Animal from "./animal.js";
 
 
-export default class Oso extends Animal{
-    constructor(nombre, edad, img, comentarios, sonido){
-        super(nombre, edad, img, comentarios, sonido)
+export class Oso extends Animal{
+    constructor(nombre, edad, comentarios){
+        super(nombre, edad, '../../imgs/Oso.png', comentarios, 'Grunido.mp3')
     }
 
     gruñir(){
-        console.log('Sonido de Oso');
-        
+        this.reproducirSonido();
     }
 }

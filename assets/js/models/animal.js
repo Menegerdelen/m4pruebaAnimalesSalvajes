@@ -21,4 +21,6 @@ export default class Animal {
     set comentarios (comentarios) {this.#comentarios = comentarios}
 
     get sonido () {return this.#sonido}
+
 }
+
